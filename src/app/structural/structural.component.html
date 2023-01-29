@@ -1,3 +1,7 @@
-<div class="primary-banner">
+<div class="primary-banner" *appHideAfter="5000; then showOtherSection">
   <p>This is temporary content.</p>
 </div>
+
+<ng-template #showOtherSection>
+  <p>This is new sections.</p>
+</ng-template>
