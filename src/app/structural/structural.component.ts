@@ -9,6 +9,7 @@ export class StructuralComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
   }
 

@@ -1,7 +1,17 @@
-<div class="primary-banner" *appHideAfter="5000; then showOtherSection">
-  <p>This is temporary content.</p>
-</div>
+<section
+  class="primary-banner"
+  *hideAfter="5000 as time; then showOtherSection; let counter; let myDefault"
+>
+  <h1>This is temporary content.</h1>
+  <p>
+    This will disappear {{ time }} in seconds. It is {{ counter }} seconds from
+    now.{{ myDefault }}.
+  </p>
+</section>
 
-<ng-template #showOtherSection>
-  <p>This is new sections.</p>
+<ng-template #showOtherSection let-hiddedAfter="appHideAfter" let-myDefault>
+  <section class="primary-banner">
+    <h1>This is New Section.</h1>
+    <p>This will appeared after {{ hiddedAfter }} seconds.{{ myDefault }}.</p>
+  </section>
 </ng-template>
