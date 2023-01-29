@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StructuralComponent } from './structural/structural.component';
-import { HideAfterDirective } from './hide-after.directive';
+import { HideAfterDirective } from './directives/hide-after.directive';
 
 @NgModule({
   declarations: [
