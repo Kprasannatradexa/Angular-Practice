@@ -51,4 +51,8 @@ export class HideAfterDirective implements OnInit {
 
   }
 
+  // static ngTemplateContextGuard(dir:HideAfterContext,ctx:unknown):ctx is HideAfterContext{
+  //   return true
+  // }
+
 }
