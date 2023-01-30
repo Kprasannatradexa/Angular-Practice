@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { StructuralComponent } from './structural/structural.component';
 import { HideAfterDirective } from './directives/hide-after.directive';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
